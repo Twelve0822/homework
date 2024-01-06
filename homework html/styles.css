@@ -1,0 +1,50 @@
+:root {
+  background-color: rgb(252, 252, 238);
+  --body-font-size: 18px;
+  --line-height30: 1.8;
+  --main-color: #199794;
+  --main-color-opacity: 25, 151, 148;
+  --body-font: "Khula", sans-serif;
+  --heading-font: "Poppins", sans-serif;
+  --paragraph-color: rgb(6, 90, 162);
+  --heading-color: #111;
+}
+
+
+body {
+  margin: 0;
+  color: var(--paragraph-color);
+  font-family: var(--body-font);
+  line-height: var(--line-height30);
+  font-size: var(--body-font-size);
+}
+
+h1 {
+  color: black;
+  font-size: 40px;
+  line-height: 1.2333333333;
+}
+
+h2 {
+  color: black;
+  font-size: 35px;
+  line-height: 1.3380952381;
+}
+
+h4 {
+  color:black;
+  font-size: 28px;
+  line-height: 1.3380952381;
+}
+
+a:hover{
+  color:rgb(10, 0, 203);
+  font-size: 20px;
+}
+
+
+table {
+  border: 2px solid rebeccapurple;
+  padding: 40px;
+}
+
