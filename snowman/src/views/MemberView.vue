@@ -42,31 +42,26 @@ const memberList = ref([
 </script>
 
 <template>
-  <dl>
-    <dt>
-      <h3>メンバー</h3>
-    </dt>
-    <dd>
-      <table>
-        <thead>
-          <tr>
-            <th v-for="t in titles" :key="t">{{ t }}</th>
-          </tr>
-        </thead>
-        <tbody @mouseleave="setImage(teamImg)">
-          <tr v-for="member in memberList" :key="member.url" @mouseover="setImage(member.imgUrl)">
-            <td>
-              <a :href="member.url" target="_blank" rel="noopener">{{ member.name }}</a>
-            </td>
-            <td>{{ member.birthday }}</td>
-            <td>{{ member.birthplace }}</td>
-            <td>{{ member.bloodType }}</td>
-            <td>{{ member.memberColor }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </dd>
-  </dl>
+  <div class="content">
+    <table>
+      <thead>
+        <tr>
+          <th v-for="t in titles" :key="t">{{ t }}</th>
+        </tr>
+      </thead>
+      <tbody @mouseleave="setImage(teamImg)">
+        <tr v-for="member in memberList" :key="member.url" @mouseover="setImage(member.imgUrl)">
+          <td>
+            <a :href="member.url" target="_blank" rel="noopener">{{ member.name }}</a>
+          </td>
+          <td>{{ member.birthday }}</td>
+          <td>{{ member.birthplace }}</td>
+          <td>{{ member.bloodType }}</td>
+          <td>{{ member.memberColor }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </template>
 
 <style scoped>
