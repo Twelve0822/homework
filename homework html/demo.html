@@ -6,54 +6,80 @@
 
     <title>Snowman's Profile</title>
     <link rel="stylesheet" href="styles.css" />
-    
   </head>
 
   <body>
-
     <header>
       <h1>Snow Man・スノーマン</h1>
     </header>
-    
+
     <nav>
-      <form action="/ja/search" class="search-form search-widget" id="top-nav-search-form" role="search">
-        <input aria-activedescendant="" aria-autocomplete="list" aria-controls="top-nav-search-menu" aria-expanded="false" aria-labelledby="top-nav-search-label" autocomplete="off" id="top-nav-search-input" role="combobox" type="search" class="search-input-field" name="q" placeholder="   " required="" value="">
+      <form
+        action="/ja/search"
+        class="search-form search-widget"
+        id="top-nav-search-form"
+        role="search"
+      >
+        <input
+          aria-activedescendant=""
+          aria-autocomplete="list"
+          aria-controls="top-nav-search-menu"
+          aria-expanded="false"
+          aria-labelledby="top-nav-search-label"
+          autocomplete="off"
+          id="top-nav-search-input"
+          role="combobox"
+          type="search"
+          class="search-input-field"
+          name="q"
+          placeholder="   "
+          required=""
+          value=""
+        />
         <button type="submit" class="button action has-icon search-button">
-          <span class="button-wrap"><span class="icon icon-search "></span>
-          <span class="visually-hidden">検索</span></span>
+          <span class="button-wrap"
+            ><span class="icon icon-search"></span>
+            <span class="visually-hidden">検索</span></span
+          >
         </button>
-        <div id="top-nav-search-menu" role="listbox" aria-labelledby="top-nav-search-label"></div>
+        <div
+          id="top-nav-search-menu"
+          role="listbox"
+          aria-labelledby="top-nav-search-label"
+        ></div>
       </form>
       <ul>
-        <li><a href="#">メンバー</a></li>
-        <li><a href="#">来歴</a></li>
-        <li><a href="#">作品</a></li>
-        <li><a href="#">出演</a></li>
+        <li><a href="#member">メンバー</a></li>
+        <li><a href="#history">来歴</a></li>
+        <li><a href="#work">作品</a></li>
+        <li><a href="#performance">出演</a></li>
       </ul>
       <dl>
         <h4>説明</h4>
         <dd>
           Snow Manは、日本の9人組男性アイドルグループ。所属事務所はSMILE-UP。<br />
-        所属レコードレーベル会社はMENT RECORDING。以前まではavex traxに所属していた。2012年5月3日結成。<br />
-        アクロバットとダンスを得意として、
-        主に舞台やバラエティ等で幅広く活動している。<br />
-        滝沢秀明がプロデュースする初のグループとして、2020年1月22日に『D.D.』でCDデビュー。
+          所属レコードレーベル会社はMENT RECORDING。以前まではavex
+          traxに所属していた。2012年5月3日結成。<br />
+          アクロバットとダンスを得意として、
+          主に舞台やバラエティ等で幅広く活動している。<br />
+          滝沢秀明がプロデュースする初のグループとして、2020年1月22日に『D.D.』でCDデビュー。
         </dd>
+      </dl>
     </nav>
     <main>
-      <input  type="button" name="Submit" value="メンバー"  οnclick="javascript:onTopClick();" />
+      <button onclick="onTopClick()">メンバー</button>
       <article>
         <hr />
-        <h2>メンバー</h2>
+        <h2 id="member">メンバー</h2>
         <button id="button_A">押してください</button>
         <h4 id="heading_A"></h4>
-        <script src="logic.js"></script>>
+        <script src="logic.js"></script>
         <script>
           function onTopClick() {
-               window.location.hash = "#abc";
-             }
-          </script>
-          
+            window.location.href = "#member";
+          }
+        </script>
+
         <table>
           <colgroup span="4"></colgroup>
           <tr>
@@ -64,62 +90,108 @@
             <th>メンバーカラー</th>
           </tr>
           <tr>
-            <td><a href="https://ja.wikipedia.org/wiki/%E5%B2%A9%E6%9C%AC%E7%85%A7">岩本照</a></td>
+            <td>
+              <a
+                href="https://ja.wikipedia.org/wiki/%E5%B2%A9%E6%9C%AC%E7%85%A7"
+                >岩本照</a
+              >
+            </td>
+            <td>1993年5月17日</td>
             <td>埼玉県</td>
             <td>A型</td>
             <td>黄</td>
           </tr>
           <tr>
-            <td><a href="https://ja.wikipedia.org/wiki/%E6%B7%B1%E6%BE%A4%E8%BE%B0%E5%93%89">深澤辰哉</a></td>
+            <td>
+              <a
+                href="https://ja.wikipedia.org/wiki/%E6%B7%B1%E6%BE%A4%E8%BE%B0%E5%93%89"
+                >深澤辰哉</a
+              >
+            </td>
             <td>1992年5月5日</td>
             <td>東京都</td>
             <td>B型</td>
             <td>紫</td>
           </tr>
           <tr>
-            <td><a href="https://ja.wikipedia.org/wiki/%E3%83%A9%E3%82%A6%E3%83%BC%E3%83%AB_(%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB)">ラウール</a></td>
+            <td>
+              <a
+                href="https://ja.wikipedia.org/wiki/%E3%83%A9%E3%82%A6%E3%83%BC%E3%83%AB_(%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB)"
+                >ラウール</a
+              >
+            </td>
             <td>2003年6月27日</td>
             <td>東京都</td>
             <td>A型</td>
             <td>白</td>
           </tr>
           <tr>
-            <td><a href="https://ja.wikipedia.org/wiki/%E6%B8%A1%E8%BE%BA%E7%BF%94%E5%A4%AA">渡辺翔太</a></td>
+            <td>
+              <a
+                href="https://ja.wikipedia.org/wiki/%E6%B8%A1%E8%BE%BA%E7%BF%94%E5%A4%AA"
+                >渡辺翔太</a
+              >
+            </td>
             <td>1992年11月5日</td>
             <td>東京都</td>
             <td>B型</td>
             <td>青</td>
           </tr>
           <tr>
-            <td><a href="https://ja.wikipedia.org/wiki/%E5%90%91%E4%BA%95%E5%BA%B7%E4%BA%8C">向井康二</a></td>
+            <td>
+              <a
+                href="https://ja.wikipedia.org/wiki/%E5%90%91%E4%BA%95%E5%BA%B7%E4%BA%8C"
+                >向井康二</a
+              >
+            </td>
             <td>1994年6月21日</td>
             <td>奈良県</td>
             <td>A型</td>
             <td>オレンジ</td>
           </tr>
           <tr>
-            <td><a href="https://ja.wikipedia.org/wiki/%E9%98%BF%E9%83%A8%E4%BA%AE%E5%B9%B3_(%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB)">阿部亮平</a></td>
+            <td>
+              <a
+                href="https://ja.wikipedia.org/wiki/%E9%98%BF%E9%83%A8%E4%BA%AE%E5%B9%B3_(%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB)"
+                >阿部亮平</a
+              >
+            </td>
             <td>1993年11月27日</td>
             <td>千葉県</td>
             <td>AB型</td>
             <td>緑</td>
           </tr>
           <tr>
-            <td><a href="https://ja.wikipedia.org/wiki/%E7%9B%AE%E9%BB%92%E8%93%AE">目黒蓮</a></td>
+            <td>
+              <a
+                href="https://ja.wikipedia.org/wiki/%E7%9B%AE%E9%BB%92%E8%93%AE"
+                >目黒蓮</a
+              >
+            </td>
             <td>1997年2月16日</td>
             <td>東京都</td>
             <td>B型</td>
             <td>黒</td>
           </tr>
           <tr>
-            <td><a href="https://ja.wikipedia.org/wiki/%E5%AE%AE%E8%88%98%E6%B6%BC%E5%A4%AA">宮舘涼太</a></td>
+            <td>
+              <a
+                href="https://ja.wikipedia.org/wiki/%E5%AE%AE%E8%88%98%E6%B6%BC%E5%A4%AA"
+                >宮舘涼太</a
+              >
+            </td>
             <td>1993年3月25日</td>
             <td>東京都</td>
             <td>A型</td>
             <td>赤</td>
           </tr>
           <tr>
-            <td><a href="https://ja.wikipedia.org/wiki/%E4%BD%90%E4%B9%85%E9%96%93%E5%A4%A7%E4%BB%8B">佐久間大介</a></td>
+            <td>
+              <a
+                href="https://ja.wikipedia.org/wiki/%E4%BD%90%E4%B9%85%E9%96%93%E5%A4%A7%E4%BB%8B"
+                >佐久間大介</a
+              >
+            </td>
             <td>1992年7月5日</td>
             <td>東京都</td>
             <td>O型</td>
@@ -128,57 +200,113 @@
         </table>
         <div id="abc"></div>
         <ul>
-          <li><a href="https://ja.wikipedia.org/wiki/%E5%B2%A9%E6%9C%AC%E7%85%A7">岩本照</a></li>
-          <img src="https://ja.wikipedia.org/wiki/%E5%B2%A9%E6%9C%AC%E7%85%A7#/media/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:Hikaru_Iwamoto_Snow_Man.jpg" alt="岩本照">
+          <li>
+            <a href="https://ja.wikipedia.org/wiki/%E5%B2%A9%E6%9C%AC%E7%85%A7"
+              >岩本照</a
+            >
+          </li>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Hikaru_Iwamoto_Snow_Man.jpg"
+            alt="岩本照"
+            width="20%"
+          />
         </ul>
         <hr />
-        <h2>来歴</h2>
+        <h2 id="history">来歴</h2>
         <h4>ジュニア時代</h4>
         <p>
-          2009年に前身ユニットである・Mis Snow Manが結成され、2010年から『滝沢歌舞伎 -TAKIZAWA KABUKI-』などで本格的に8人で活動を始める。<br />
-          そのうちの深澤辰哉、佐久間大介、渡辺翔太、宮舘涼太、 岩本照、阿部亮平の6人で2012年5月3日、滝沢秀明の舞台『滝沢歌舞伎2012』では6人がステージに立った際、パフォーマンス中にバックスクリーンの電光掲示板に「Snow Man」と突然文字が現れ、本人達にもサプライズで正式にグループ名が発表され、グループ結成に至る。名付け親も滝沢秀明。
+          2009年に前身ユニットである・Mis Snow
+          Manが結成され、2010年から『滝沢歌舞伎 -TAKIZAWA
+          KABUKI-』などで本格的に8人で活動を始める。<br />
+          そのうちの深澤辰哉、佐久間大介、渡辺翔太、宮舘涼太、
+          岩本照、阿部亮平の6人で2012年5月3日、滝沢秀明の舞台『滝沢歌舞伎2012』では6人がステージに立った際、パフォーマンス中にバックスクリーンの電光掲示板に「Snow
+          Man」と突然文字が現れ、本人達にもサプライズで正式にグループ名が発表され、グループ結成に至る。名付け親も滝沢秀明。
         </p>
         <h4>デビュー以降</h4>
         <p>
-          2020年1月22日に発売されたデビューシングル『D.D./Imitation Rain』は発売初日に77.3万枚を売り上げ、1月21日付オリコンデイリーランキングで初登場1位を記録。<br />
-          発売3日目の1月23日付オリコンデイリーシングルランキングでは累積枚数109.4万枚を売り上げ、ミリオンを達成。ウィークリーチャートでも初登場1位を獲得し、史上初のデビューシングル初週ミリオンを達成した。2月1日にはタイ・バンコクにグループ初の海外遠征。「JAPAN EXPO THAILAND 2020」に出演し、デビュー曲「D.D.」を含めた4曲を披露した。
+          2020年1月22日に発売されたデビューシングル『D.D./Imitation
+          Rain』は発売初日に77.3万枚を売り上げ、1月21日付オリコンデイリーランキングで初登場1位を記録。<br />
+          発売3日目の1月23日付オリコンデイリーシングルランキングでは累積枚数109.4万枚を売り上げ、ミリオンを達成。ウィークリーチャートでも初登場1位を獲得し、史上初のデビューシングル初週ミリオンを達成した。2月1日にはタイ・バンコクにグループ初の海外遠征。「JAPAN
+          EXPO THAILAND
+          2020」に出演し、デビュー曲「D.D.」を含めた4曲を披露した。
         </p>
         <hr />
-        <h2>作品</h2>
+        <h2 id="work">作品</h2>
         <h4>2020年</h4>
         <ul>
-          <li>Black Gold（作詞：EMI K. LYNN、作曲：BERGLUND KEN MIKAEL/LOVE ANDY） - JASRAC作品コード：1O8-8726-3</li>
+          <li>
+            Black Gold（作詞：EMI K. LYNN、作曲：BERGLUND KEN MIKAEL/LOVE ANDY）
+            - JASRAC作品コード：1O8-8726-3
+          </li>
         </ul>
         <h4>2021年</h4>
         <ul>
-          <li>One Heart（作詞：草川瞬、作曲：草川　瞬/Susumu Kawaguchi） - JASRAC作品コード：262-5588-0</li>
+          <li>
+            One Heart（作詞：草川瞬、作曲：草川　瞬/Susumu Kawaguchi） -
+            JASRAC作品コード：262-5588-0
+          </li>
         </ul>
         <h4>2023年</h4>
         <ul>
-          <li>ココロヒトツ（作詞：MORISHIN、作曲：川口進/MORISHIN） - JASRAC作品コード：285-2115-3</li>
+          <li>
+            ココロヒトツ（作詞：MORISHIN、作曲：川口進/MORISHIN） -
+            JASRAC作品コード：285-2115-3
+          </li>
         </ul>
         <hr />
-        <h2>出演</h2>
+        <h2 id="performance">出演</h2>
         <h4>コンサート</h4>
         <ul>
-          <li><a href="https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%8B%E3%83%BC%E3%82%BA%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%96#2020%E5%B9%B4%E5%BA%A6">日本中に元気を‼︎ジャニーズカウントダウン2020-2021〜東京の街から歌でつながる生放送〜</a></li>
-          <li><a href="https://ja.wikipedia.org/wiki/Johnny%27s_Festival_%E3%80%9CThank_you_2021_Hello_2022%E3%80%9C">Johnny's Festival 〜Thank you 2021 Hello 2022〜</a></li>
-          <li><a href="https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%8B%E3%83%BC%E3%82%BA%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%96#2021%E5%B9%B4%E5%BA%A6">ジャニーズカウントダウン2021-2022</a></li>
+          <li>
+            <a
+              href="https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%8B%E3%83%BC%E3%82%BA%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%96#2020%E5%B9%B4%E5%BA%A6"
+              >日本中に元気を‼︎ジャニーズカウントダウン2020-2021〜東京の街から歌でつながる生放送〜</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://ja.wikipedia.org/wiki/Johnny%27s_Festival_%E3%80%9CThank_you_2021_Hello_2022%E3%80%9C"
+              >Johnny's Festival 〜Thank you 2021 Hello 2022〜</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%8B%E3%83%BC%E3%82%BA%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%96#2021%E5%B9%B4%E5%BA%A6"
+              >ジャニーズカウントダウン2021-2022</a
+            >
+          </li>
         </ul>
         <h4>イベント</h4>
         <ul>
-          <li>新体感ライブ CONNECT With SixTONES/Snow Man（2020年3月18日、Billboard Live TOKYO）</li>
-          <li>第34回 マイナビ 東京ガールズコレクション 2022 SPRING/SUMMER（2022年3月23日、国立代々木競技場第一体育館）</li>
+          <li>
+            新体感ライブ CONNECT With SixTONES/Snow
+            Man（2020年3月18日、Billboard Live TOKYO）
+          </li>
+          <li>
+            第34回 マイナビ 東京ガールズコレクション 2022
+            SPRING/SUMMER（2022年3月23日、国立代々木競技場第一体育館）
+          </li>
         </ul>
         <h4>テレビ番組</h4>
         <ul>
-          <li><a href="https://ja.wikipedia.org/wiki/%E3%81%9D%E3%82%8CSnow_Man%E3%81%AB%E3%82%84%E3%82%89%E3%81%9B%E3%81%A6%E4%B8%8B%E3%81%95%E3%81%84">それSnow Manにやらせて下さい（2020年3月25日・2021年1月1日・4月11日 - 、TBS）</a></li>
-          <li><a href="https://ja.wikipedia.org/wiki/%E3%83%A9%E3%83%B4%E3%82%A3%E3%83%83%E3%83%88!">ラヴィット!（2021年4月2日 - 30日、TBS） - 4月度マンスリーゲスト</a></li>
+          <li>
+            <a
+              href="https://ja.wikipedia.org/wiki/%E3%81%9D%E3%82%8CSnow_Man%E3%81%AB%E3%82%84%E3%82%89%E3%81%9B%E3%81%A6%E4%B8%8B%E3%81%95%E3%81%84"
+              >それSnow
+              Manにやらせて下さい（2020年3月25日・2021年1月1日・4月11日 -
+              、TBS）</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://ja.wikipedia.org/wiki/%E3%83%A9%E3%83%B4%E3%82%A3%E3%83%83%E3%83%88!"
+              >ラヴィット!（2021年4月2日 - 30日、TBS） -
+              4月度マンスリーゲスト</a
+            >
+          </li>
         </ul>
-       
-        <p>
-         
-        </p>
+
+        <p></p>
       </article>
 
       <aside>

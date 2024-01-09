@@ -10,7 +10,6 @@
   --heading-color: #111;
 }
 
-
 body {
   margin: 0;
   color: var(--paragraph-color);
@@ -32,19 +31,29 @@ h2 {
 }
 
 h4 {
-  color:black;
+  color: black;
   font-size: 28px;
   line-height: 1.3380952381;
 }
 
-a:hover{
-  color:rgb(10, 0, 203);
+a:hover {
+  color: rgb(10, 0, 203);
   font-size: 20px;
 }
 
-
 table {
   border: 2px solid rebeccapurple;
+  border-collapse: collapse;
   padding: 40px;
+  margin: auto;
 }
 
+th,
+td {
+  padding: 3px;
+  border: solid;
+}
+
+th {
+  background-color: rgba(242, 255, 0, 0.814);
+}
